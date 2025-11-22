@@ -9,12 +9,15 @@ fieldset {
   border-radius: var(--radius-md);
   padding: var(--space-md);
   margin-bottom: var(--space-md);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 legend {
   padding: 0 var(--space-sm);
   font-weight: 600;
   color: var(--text);
+  max-width: 100%;
 }
 
 input,
