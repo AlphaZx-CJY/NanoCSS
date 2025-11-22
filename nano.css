@@ -281,11 +281,14 @@ fieldset {
   border-radius: var(--radius-md);
   padding: var(--space-md);
   margin-bottom: var(--space-md);
+  max-width: 100%;
+  overflow: hidden;
 }
 legend {
   padding: 0 var(--space-sm);
   font-weight: 600;
   color: var(--text);
+  max-width: 100%;
 }
 input,
 select,
@@ -422,6 +425,23 @@ footer {
 
   h2 {
     font-size: var(--font-xl);
+  }
+
+  /* 移动端图片优化 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 移动端fieldset优化 */
+  fieldset {
+    padding: var(--space-sm);
+  }
+
+  /* 移动端表格优化 */
+  table {
+    display: block;
+    overflow-x: auto;
   }
 }
 /* 进度条 */
