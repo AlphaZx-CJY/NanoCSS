@@ -1,0 +1,38 @@
+{
+  "name": "@alpha/nanocss",
+  "version": "1.0.0",
+  "description": "A pure CSS library that styles HTML tags directly",
+  "main": "dist/nano.min.css",
+  "style": "dist/nano.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaZx-CJY/NanoCSS.git"
+  },
+  "files": [
+    "dist/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/rollup": "^0.51.4",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "vite": "7.2.2"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "html",
+    "ui",
+    "design"
+  ],
+  "author": "congjiye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlphaZx-CJY/NanoCSS/issues"
+  }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .card {
+    padding: var(--space-md);
+  }
+
+  h1 {
+    font-size: var(--font-xxl);
+  }
+
+  h2 {
+    font-size: var(--font-xl);
+  }
+}

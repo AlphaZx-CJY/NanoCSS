@@ -1,0 +1,215 @@
+/* ===== 排版系统 ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+  color: var(--text);
+}
+
+h1 {
+  font-size: var(--font-xxxl);
+  margin: var(--space-xl) 0 var(--space-lg);
+}
+
+h2 {
+  font-size: var(--font-xxl);
+  margin: var(--space-xl) 0 var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: var(--font-xl);
+  margin: var(--space-lg) 0 var(--space-md);
+}
+
+h4 {
+  font-size: var(--font-lg);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 3px solid var(--blockquote-border);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--blockquote-bg);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+pre {
+  background-color: var(--code-bg);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+}
+
+li {
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--space-lg) 0;
+}
+
+/* 引用和引用来源 */
+q {
+  quotes: '“' '”' '‘' '’';
+  font-style: italic;
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+cite {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+/* 定义列表 */
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* 缩写词 */
+abbr[title] {
+  border-bottom: 1px dotted var(--text-secondary);
+  cursor: help;
+  text-decoration: none;
+}
+
+/* 代码相关 */
+samp {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-sm);
+}
+
+kbd {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.1em 0.4em;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+var {
+  font-style: italic;
+  font-family: serif;
+}
+
+/* 上下标 */
+sup,
+sub {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 删除线和插入文本 */
+s {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+ins {
+  text-decoration: underline;
+  background-color: var(--highlight);
+}
+
+del {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+/* 小号文本 */
+small {
+  font-size: 0.875em;
+  color: var(--text-secondary);
+}
+
+/* 标记文本 */
+mark {
+  background-color: var(--highlight);
+  padding: 0.1em 0.2em;
+  border-radius: var(--radius-sm);
+}

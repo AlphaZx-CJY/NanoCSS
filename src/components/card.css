@@ -1,0 +1,9 @@
+/* ===== 卡片组件 ===== */
+.card {
+  background-color: var(--bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  transition: var(--transition);
+  border: 1px solid var(--border);
+}

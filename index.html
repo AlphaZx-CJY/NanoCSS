@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nano.css</title>
+    <script type="module" src="/src/index.css"></script>
+    <style>
+      /* ===== 主题切换按钮 ===== */
+      .theme-toggle {
+        position: absolute;
+        top: var(--space-sm);
+        right: var(--space-md);
+        background: var(--theme-toggle-bg);
+        color: var(--theme-toggle-text);
+        border: none;
+        border-radius: var(--radius-md);
+        padding: var(--space-xs) var(--space-sm);
+        font-size: var(--font-sm);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: var(--space-xs);
+        transition: var(--transition);
+      }
+
+      .theme-toggle:hover {
+        background: var(--primary);
+        color: white;
+      }
+
+      .theme-toggle svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航区域 -->
+    <nav>
+      <ul>
+        <li><a href="#typography">排版</a></li>
+        <li><a href="#lists">列表</a></li>
+        <li><a href="#tables">表格</a></li>
+        <li><a href="#forms">表单</a></li>
+        <li><a href="#media">媒体</a></li>
+        <li><a href="#card">卡片</a></li>
+        <li><a href="#advanced">高级元素</a></li>
+      </ul>
+
+      <!-- 主题切换按钮 -->
+      <button class="theme-toggle" id="themeToggle">
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path
+            d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35,3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1S11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"
+          />
+        </svg>
+        <span>切换主题</span>
+      </button>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+      <header>
+        <h1>Nano.css</h1>
+        <p>完整HTML5标签支持的零类名CSS库</p>
+      </header>
+
+      <!-- 排版部分 -->
+      <section id="typography">
+        <h2>排版元素</h2>
+
+        <article>
+          <h3>标题层级</h3>
+          <h1>一级标题 (h1)</h1>
+          <h2>二级标题 (h2)</h2>
+          <h3>三级标题 (h3)</h3>
+          <h4>四级标题 (h4)</h4>
+          <h5>五级标题 (h5)</h5>
+          <h6>六级标题 (h6)</h6>
+        </article>
+
+        <article>
+          <h3>段落与文本</h3>
+          <p>这是一个标准的段落文本。在现代网页设计中，段落是内容组织的基本单位，用于展示连续的文字内容。</p>
+          <p>这是另一个段落，包含<strong>加粗文本</strong>和<em>斜体文本</em>，以及一个<a href="#">示例链接</a>。</p>
+
+          <blockquote>
+            <p>CSS变量（也称为CSS自定义属性）是CSS中的强大功能，允许开发者在样式表中定义可重用的值。</p>
+            <footer>— <cite>CSS权威指南</cite></footer>
+          </blockquote>
+
+          <pre><code>// 代码块示例
+function toggleTheme() {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    htmlElement.setAttribute('data-theme', newTheme);
+}</code></pre>
+        </article>
+
+        <article>
+          <h3>其他文本元素</h3>
+          <p><q>这是一句引文</q> - 使用q标签表示短引用</p>
+          <p><abbr title="超文本标记语言">HTML</abbr> - 使用abbr标签表示缩写</p>
+          <p><samp>这是示例输出</samp> - 使用samp标签表示程序输出</p>
+          <p><kbd>Ctrl</kbd> + <kbd>C</kbd> - 使用kbd标签表示键盘输入</p>
+          <p><var>x</var> = <var>y</var> + <var>z</var> - 使用var标签表示变量</p>
+          <p>H<sub>2</sub>O - 使用sub标签表示下标</p>
+          <p>E = mc<sup>2</sup> - 使用sup标签表示上标</p>
+          <p><s>过时的内容</s> - 使用s标签表示不再准确的内容</p>
+          <p><small>小号文本</small> - 使用small标签表示小号文本</p>
+          <p><mark>高亮文本</mark> - 使用mark标签表示高亮文本</p>
+          <p><ins>插入的文本</ins> - 使用ins标签表示插入的文本</p>
+          <p><del>删除的文本</del> - 使用del标签表示删除的文本</p>
+        </article>
+      </section>
+
+      <!-- 列表部分 -->
+      <section id="lists">
+        <h2>列表元素</h2>
+
+        <article>
+          <h3>无序列表</h3>
+          <ul>
+            <li>列表项 1</li>
+            <li>
+              列表项 2
+              <ul>
+                <li>嵌套列表项 A</li>
+                <li>嵌套列表项 B</li>
+              </ul>
+            </li>
+            <li>列表项 3</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>有序列表</h3>
+          <ol>
+            <li>第一步操作说明</li>
+            <li>
+              第二步操作说明
+              <ol>
+                <li>子步骤 A</li>
+                <li>子步骤 B</li>
+              </ol>
+            </li>
+            <li>第三步操作说明</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>定义列表</h3>
+          <dl>
+            <dt>HTML</dt>
+            <dd>超文本标记语言，用于创建网页结构</dd>
+
+            <dt>CSS</dt>
+            <dd>层叠样式表，用于描述网页的表现</dd>
+
+            <dt>JavaScript</dt>
+            <dd>脚本语言，用于实现网页交互功能</dd>
+          </dl>
+        </article>
+      </section>
+
+      <!-- 表格部分 -->
+      <section id="tables">
+        <h2>表格元素</h2>
+
+        <article>
+          <h3>基础表格</h3>
+          <table>
+            <caption>
+              员工信息表
+            </caption>
+            <thead>
+              <tr>
+                <th>姓名</th>
+                <th>职位</th>
+                <th>部门</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>张三</td>
+                <td>前端工程师</td>
+                <td>技术部</td>
+              </tr>
+              <tr>
+                <td>李四</td>
+                <td>UI设计师</td>
+                <td>设计部</td>
+              </tr>
+              <tr>
+                <td>王五</td>
+                <td>产品经理</td>
+                <td>产品部</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">共3名员工</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+      </section>
+
+      <!-- 表单部分 -->
+      <section id="forms">
+        <h2>表单元素</h2>
+
+        <article>
+          <h3>基础表单</h3>
+          <form>
+            <fieldset>
+              <legend>个人信息</legend>
+
+              <label for="name">姓名</label>
+              <input type="text" id="name" placeholder="请输入您的姓名" />
+
+              <label for="email">电子邮箱</label>
+              <input type="email" id="email" placeholder="example@domain.com" />
+
+              <label for="password">密码</label>
+              <input type="password" id="password" placeholder="请输入密码" />
+
+              <label for="bio">个人简介</label>
+              <textarea id="bio" rows="4" placeholder="请介绍一下你自己..."></textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>偏好设置</legend>
+
+              <label for="country">国家</label>
+              <select id="country">
+                <option value="">请选择国家</option>
+                <option value="china">中国</option>
+                <option value="usa">美国</option>
+                <option value="japan">日本</option>
+              </select>
+
+              <div style="margin: var(--space-md) 0">
+                <label>订阅选项</label>
+                <div>
+                  <input type="checkbox" id="news" name="subscribe" value="news" />
+                  <label for="news">新闻订阅</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="promotions" name="subscribe" value="promotions" />
+                  <label for="promotions">促销信息</label>
+                </div>
+              </div>
+
+              <div style="margin: var(--space-md) 0">
+                <label>支付方式</label>
+                <div>
+                  <input type="radio" id="credit" name="payment" value="credit" />
+                  <label for="credit">信用卡</label>
+                </div>
+                <div>
+                  <input type="radio" id="paypal" name="payment" value="paypal" />
+                  <label for="paypal">PayPal</label>
+                </div>
+              </div>
+
+              <label for="volume">音量控制</label>
+              <input type="range" id="volume" name="volume" min="0" max="100" />
+
+              <label for="file">上传文件</label>
+              <input type="file" id="file" name="file" />
+            </fieldset>
+
+            <div style="display: flex; gap: var(--space-sm); margin-top: var(--space-md)">
+              <button type="submit">提交表单</button>
+              <button type="reset">重置</button>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <!-- 媒体部分 -->
+      <section id="media">
+        <h2>媒体元素</h2>
+
+        <article>
+          <h3>图片</h3>
+          <figure>
+            <img src="https://via.placeholder.com/800x400" alt="示例图片" />
+            <figcaption>图1: 图片示例说明</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>嵌入内容</h3>
+          <iframe src="https://example.com" title="示例iframe" height="300"></iframe>
+        </article>
+      </section>
+
+      <!-- 卡片组件示例 -->
+      <section id="card">
+        <h2>卡片组件 (.card)</h2>
+        <div class="card">
+          <h3>卡片标题</h3>
+          <p>这是整个库中唯一使用的自定义类，用于创建卡片式容器：</p>
+          <pre><code>&lt;div class="card"&gt;
+    &lt;h3&gt;卡片标题&lt;/h3&gt;
+    &lt;p&gt;卡片内容...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <p>卡片提供视觉层次和内容分组，默认带有圆角、内边距和边框。</p>
+        </div>
+      </section>
+
+      <!-- 高级HTML5元素 -->
+      <section id="advanced">
+        <h2>高级HTML5元素</h2>
+
+        <article>
+          <h3>详情与摘要</h3>
+          <details>
+            <summary>点击查看详情</summary>
+            <p>这是使用details和summary标签创建的折叠内容区域。点击摘要可以展开或折叠内容。</p>
+            <p>这种元素非常适合FAQ部分或需要隐藏额外内容的情况。</p>
+          </details>
+        </article>
+
+        <article>
+          <h3>进度条</h3>
+          <label for="progress">任务进度:</label>
+          <progress id="progress" value="65" max="100">65%</progress>
+        </article>
+
+        <article>
+          <h3>度量器</h3>
+          <label for="meter">存储空间使用情况:</label>
+          <meter id="meter" value="0.75">75%</meter>
+        </article>
+
+        <article>
+          <h3>数据列表</h3>
+          <label for="browser">选择浏览器:</label>
+          <input list="browsers" id="browser" name="browser" />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+            <option value="Opera"></option>
+          </datalist>
+        </article>
+
+        <article>
+          <h3>输出元素</h3>
+          <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50" />
+            +
+            <input type="number" id="b" value="25" />
+            =
+            <output name="result" for="a b">75</output>
+          </form>
+        </article>
+
+        <article>
+          <h3>对话框</h3>
+          <button onclick="document.getElementById('dialog').showModal()">打开对话框</button>
+          <dialog id="dialog">
+            <h3>对话框标题</h3>
+            <p>这是一个使用dialog标签创建的模态对话框。</p>
+            <button onclick="document.getElementById('dialog').close()">关闭</button>
+          </dialog>
+        </article>
+
+        <article>
+          <h3>模板</h3>
+          <template id="product-template">
+            <div class="card">
+              <h3 class="product-name">产品名称</h3>
+              <p class="product-price">价格: $0.00</p>
+            </div>
+          </template>
+          <p>模板内容不会在页面上显示，但可以通过JavaScript克隆和使用。</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- 页脚区域 -->
+    <footer>
+      <p>Nano.css - 基于AI生成的HTML5语义标签的零类名CSS库</p>
+      <p>© 2025 简约设计 | MIT开源许可证</p>
+    </footer>
+
+    <script>
+      // 主题切换功能
+      const themeToggle = document.getElementById('themeToggle');
+      const htmlElement = document.documentElement;
+
+      // 检查本地存储中的主题设置
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        htmlElement.setAttribute('data-theme', savedTheme);
+      }
+
+      // 切换主题函数
+      function toggleTheme() {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      }
+
+      // 添加点击事件
+      themeToggle.addEventListener('click', toggleTheme);
+    </script>
+  </body>
+</html>

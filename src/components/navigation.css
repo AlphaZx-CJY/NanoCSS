@@ -1,0 +1,22 @@
+/* ===== 导航组件 ===== */
+nav {
+  padding: var(--space-lg) 0;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-lg);
+  justify-content: center;
+  padding-bottom: var(--space-md);
+}
+
+nav a {
+  color: var(--text-secondary);
+}
+
+nav a:hover {
+  color: var(--text);
+}

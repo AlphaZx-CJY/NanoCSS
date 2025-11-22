@@ -1,0 +1,18 @@
+/* 暗色主题 - 使用 #15CE58 作为主色调 */
+[data-theme='dark'] {
+  --bg: #121212;
+  --text: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --primary: #15ce58; /* 主要颜色 - 亮绿色 */
+  --primary-hover: #0db44a; /* 悬停颜色 - 稍深的绿色 */
+  --border: #374151;
+  --code-bg: #111827;
+  --blockquote-bg: #0d2e1c; /* 深绿色背景 */
+  --blockquote-border: #15ce58; /* 绿色边框 */
+  --link: #15ce58; /* 链接颜色 - 绿色 */
+  --link-hover: #0db44a; /* 链接悬停颜色 */
+  --theme-toggle-bg: #1a1a1a;
+  --theme-toggle-text: #e5e7eb;
+  --table-bg: #1a1a1a;
+  --highlight: #2d3a2d;
+}

@@ -1,0 +1,18 @@
+:root {
+  /* 亮色主题 */
+  --bg: #ffffff;
+  --text: #333333;
+  --text-secondary: #666666;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --border: #e5e7eb;
+  --code-bg: #f3f4f6;
+  --blockquote-bg: #f0f9ff;
+  --blockquote-border: #93c5fd;
+  --link: #2563eb;
+  --link-hover: #1d4ed8;
+  --theme-toggle-bg: #f1f5f9;
+  --theme-toggle-text: #1e293b;
+  --table-bg: #f8fafc;
+  --highlight: #fff9c4;
+}
