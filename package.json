@@ -1,5 +1,5 @@
 {
-  "name": "@alpha/nanocss",
+  "name": "@congjiye/nanocss",
   "version": "1.0.1",
   "description": "A pure CSS library that styles HTML tags directly",
   "main": "dist/nano.min.css",
