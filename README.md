@@ -16,10 +16,21 @@ Nano.css 的核心设计理念是：
 
 ## 快速开始
 
-将以下代码添加到 HTML 文件的<head>部分：
+将以下代码添加到 HTML 文件的`<head>`部分：
 
 ```html
 <link rel="stylesheet" href="./dist/nano.min.css" />
+```
+
+或是使用 npm 进行安装使用。并在代码中引入该样式
+
+```bash
+npm i @congjiye/nanocss
+```
+
+```javascript
+// index.js
+import '@conjiye/nanocss/dist/nano.min.css';
 ```
 
 ## 功能特性
@@ -123,7 +134,3 @@ Nano.css 支持所有现代浏览器，包括：
 ## 许可证
 
 Nano.css 基于 MIT 许可证 开源，您可以自由地在个人和商业项目中使用它。
-
-## TODO
-
-- [ ] 支持发布到 NPM 中心仓
