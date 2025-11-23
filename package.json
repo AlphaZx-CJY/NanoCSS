@@ -1,6 +1,6 @@
 {
   "name": "@congjiye/nanocss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pure CSS library that styles HTML tags directly",
   "main": "dist/nano.min.css",
   "style": "dist/nano.min.css",
