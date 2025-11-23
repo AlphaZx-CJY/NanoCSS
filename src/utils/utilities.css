@@ -121,6 +121,10 @@ figcaption {
   color: var(--text-secondary);
 }
 
+img {
+  border-radius: var(--radius-md);
+}
+
 /* 分区 */
 div,
 section,

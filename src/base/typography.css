@@ -32,6 +32,16 @@ h4 {
   margin: var(--space-md) 0 var(--space-sm);
 }
 
+h5 {
+  font-size: var(--font-sm);
+  margin: var(--space-sm) 0 var(--space-xs);
+}
+
+h6 {
+  font-size: var(--font-xs);
+  margin: var(--space-xs) 0;
+}
+
 p {
   margin-bottom: var(--space-md);
   color: var(--text);
@@ -212,4 +222,5 @@ mark {
   background-color: var(--highlight);
   padding: 0.1em 0.2em;
   border-radius: var(--radius-sm);
+  color: var(--text);
 }

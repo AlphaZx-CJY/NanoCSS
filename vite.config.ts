@@ -19,6 +19,7 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: true,
     emptyOutDir: true,
+    copyPublicDir: true,
   },
   base: '/NanoCSS/',
 });

@@ -10,7 +10,6 @@ nav ul {
   list-style: none;
   gap: var(--space-lg);
   justify-content: center;
-  padding-bottom: var(--space-md);
 }
 
 nav a {

@@ -10,6 +10,7 @@
 
   /* 排版系统 */
   --font-base: 1rem;
+  --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-lg: 1.125rem;
   --font-xl: 1.25rem;
