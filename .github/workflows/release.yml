@@ -3,7 +3,7 @@ name: Automated Release
 on:
   push:
     tags:
-      - 'v*.*.*' # 语义化版本标签
+      - 'v*'
 
 jobs:
   release:
