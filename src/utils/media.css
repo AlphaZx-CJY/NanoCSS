@@ -32,7 +32,6 @@
 
   /* 移动端表格优化 */
   table {
-    display: block;
     overflow-x: auto;
   }
 }
