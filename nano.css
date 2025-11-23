@@ -10,6 +10,7 @@
 
   /* 排版系统 */
   --font-base: 1rem;
+  --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-lg: 1.125rem;
   --font-xl: 1.25rem;
@@ -77,6 +78,14 @@ h3 {
 h4 {
   font-size: var(--font-lg);
   margin: var(--space-md) 0 var(--space-sm);
+}
+h5 {
+  font-size: var(--font-sm);
+  margin: var(--space-sm) 0 var(--space-xs);
+}
+h6 {
+  font-size: var(--font-xs);
+  margin: var(--space-xs) 0;
 }
 p {
   margin-bottom: var(--space-md);
@@ -229,6 +238,7 @@ mark {
   background-color: var(--highlight);
   padding: 0.1em 0.2em;
   border-radius: var(--radius-sm);
+  color: var(--text);
 }
 /* ===== 布局系统 ===== */
 body {
@@ -254,7 +264,6 @@ nav ul {
   list-style: none;
   gap: var(--space-lg);
   justify-content: center;
-  padding-bottom: var(--space-md);
 }
 nav a {
   color: var(--text-secondary);
@@ -545,6 +554,9 @@ figcaption {
   margin-top: var(--space-sm);
   font-style: italic;
   color: var(--text-secondary);
+}
+img {
+  border-radius: var(--radius-md);
 }
 /* 分区 */
 div,
